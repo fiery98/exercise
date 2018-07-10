@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main() {
     printf("Celsius      Fahrenheit\n");
     int c=0;
