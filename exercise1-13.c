@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int i,j,input;
+    int i,j,k,input;
     int lengths[100],output[20][100];
-    j=0;
+    j=k=0;
     for(i=0;i<100;i++){
         lengths[i]=0;
     }
@@ -13,8 +13,12 @@ int main() {
         else j++;
     }
     for(i=0;i<100;i++){
-        if(lengths[i]=0){
-            for(j=i;j<100-i;j++) lengths[j]=lengths[j+1];
+        if(lengths[i]==0){
+            while(lengths[i]==0&&k<100)
+            {
+                for(j=i;j<100-i;j++) lengths[j]=lengths[j+1];
+                k++;
+            }
         }
     }
     for(i=0;i<100;i++){
