@@ -30,7 +30,7 @@ void entab(char c[],int a){
     for(i=0;i<1999-3;i++){
         if(c[i]==' '&&c[i+1]==' '&&c[i+2]==' '&&c[i+3]==' '){
             c[i]='\t';
-            for(j=i+1;j<2000-3;j++)
+            for(j=i+1;j<a-3;j++)
                 c[j]=c[j+3];
         }
     }
