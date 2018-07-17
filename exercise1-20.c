@@ -16,7 +16,7 @@ int main() {
 
 int input(char line[]){
     int a,i;
-    for(i=0;(a=getchar())!=EOF&&a!='\n'&&i<999;i++)
+    for(i=0;(a=getchar())!=EOF&&a!='\n'&&i<499;i++)
         line[i]=a;
     if(a=='\n'){
         line[i]=a;
