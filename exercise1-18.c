@@ -6,9 +6,12 @@ int main() {
     int lengths;
     char line[1000];
     while((lengths=input(line))>0){
-        if(lengths>80){
-            printf("%s",line);
+        while(line[lengths-2]==' '||line[lengths-2]=='\t'){
+            line[lengths-2]=line[lengths-1];
+            line[lengths-1]=line[lengths];
+            lengths--;
         }
+        printf("%s",line);
     }
     return 0;
 }
