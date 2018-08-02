@@ -47,4 +47,5 @@ int main() {
     longmax=lo-1;
     ulongmax=lo*2-1;
     printf("signed long: %ld ¡ª %ld\nunsigned long: 0 ¡ª %lu\n",longmin,longmax,ulongmax);
+    return 0;
 }
