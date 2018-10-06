@@ -15,6 +15,5 @@ int main() {
 }
 
 void invert(unsigned int x,int p,int n){
-    unsigned int y;
     printf("%u\n",(~x&(~(~0<<p)&~0<<(p-n)))+(x&~(~(~0<<p)&~0<<(p-n))));
 }

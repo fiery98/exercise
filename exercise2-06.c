@@ -15,9 +15,5 @@ int main() {
 }
 
 void setbits(unsigned int x,int p,int n){
-    unsigned int y;
-    int z=0;
-    while((x>>z)!=0)
-        z++;
-    printf("%u\n",((x>>(p-n)&~(~0<<n))<<(z-n))+((x>>n)&(~0<<(p-n))&~(~0<<(z-n)))+(x&~(~0<<(p-n))));
+    printf("%u\n",x&(~0<<p)+((x>>(p-n))&~(~0<<n))+((x&~(~0<<(p-n)))<<n));
 }
